@@ -24,7 +24,19 @@
 
 int greatest (int a, int b, int c)
 {
-  return a;
+  int m;
+m=a;
+if ( c >= m )
+{
+m=c;
+}
+if ( b>=m )
+{ 
+  m = b ;
+}
+
+
+  return m;
 }
 
 /* Do not edit this function. */
