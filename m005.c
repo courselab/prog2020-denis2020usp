@@ -27,6 +27,7 @@
 
 int determinant (int m[3][3])
 {
+  int i;
   return 0;
 }
 
