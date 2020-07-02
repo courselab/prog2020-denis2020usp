@@ -21,6 +21,7 @@
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 
 #define MAX 256
 
@@ -28,8 +29,22 @@
 
 int lettercount (char *s)
 {
-  return 0;
+  int n;
+  int i;
+  int value;
+  value = 0;
+  n = strlen (s);
+  for (i=n-1; i>=0; i--)
+  {
+  if (s[i] >='a' & s[i] <='z' || s[i] >='A' & s[i] <='Z')
+  {
+value += 1;
+  }
+  
+  }
+  return value;
 }
+  
 
 
 
