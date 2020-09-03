@@ -20,7 +20,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-
 /* Return the value in decimal base of the string b, interpreted
    as the a positive binary number. If the string contains any
    characters other than '1's and '0's, truncate the string
@@ -29,8 +28,21 @@
 
 int decimal (char *b)
 {
-  
-  return 0;
+  int n;
+  int i;
+  int value;
+  int pot_base_dois = 1;
+  value = 0;
+  n = strlen (b);
+  for (i=n-1; i>=0; i--)
+  {
+  if (b[i]=='1')
+  {
+value += pot_base_dois;
+  }
+  pot_base_dois *= 2;
+  }
+  return value;
 }
 
 #define USAGE "m004 <string>\n"
